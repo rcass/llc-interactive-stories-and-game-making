@@ -193,7 +193,7 @@
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Coding Enviroment
+        #Coding Environment
         ##Web Browsers +  Text Editors
       </script>
     </section>
@@ -218,8 +218,7 @@
       <script type="text/template">
         #Developer Tools
 
-        **Chrome Developer tools** take it a step further and allows you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple ways:
-
+        **Chrome Developer tools** take it a step further and allow you to *inspect* any web page, making it easier to test & debug code. The tools can be accessed in a couple of ways:
         * Option 1: right-click / two-finger tap on a web page and select **Inspect Element**
         * Option 2: **Ctrl + Shift + I** (PC) / **Cmnd + Option + I** (Mac)
 
@@ -258,7 +257,7 @@
 
         ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
 
-        The **Settings** tab will show by default. Scroll down to **Soft Wrap** option.
+        The **Settings** tab will show by default. Scroll down to the **Soft Wrap** option.
 
         ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
@@ -337,7 +336,7 @@
 
         Nested tags create a family tree-like relationship, often referred to as *parent* and *child* nodes.
 
-        The inner tag is the child of the outer tag.
+        The inner element is the child of the outer element.
 
         ```
         <parent>
@@ -357,7 +356,7 @@
         <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body></body></html>
         ```
 
-        But for us, using whitespace through indentation (tabs) will makes HTML easier to read. When nesting a tag, add one tab space.
+        But for us, using whitespace through indentation (tabs) makes HTML easier to read. When nesting a tag, add one tab space.
 
         ```
         <outertag>
@@ -491,7 +490,7 @@
 
         * always the first HTML tag & identifies the document as HTML
         * it is the root element & ancestor of all other elements because everything is *nested* inside
-        * the `lang` *attribute* classifies the language (more on attributes soon)
+        * the `lang` *attribute* identifies the language (more on attributes soon)
 
         <pre><code>&lt;!DOCTYPE html&gt;
         <strong>&lt;html lang=&quot;en&quot;&gt;</strong>
@@ -558,10 +557,10 @@
       <script type="text/template">
         # Attributes
 
-        * provides additional information or instruction for the element
+        * provide additional information or instruction for the element
         * included *inside the opening HTML tag*
-        * follows the syntax of `attribute="value"` (note the quotes)
-        * many different attributes
+        * follow the syntax `attribute="value"` (note the quotes)
+        * There are many different attributes for each HTML element
 
         ```
         <tag attribute="value">content</tag>
@@ -602,7 +601,7 @@
 
         HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<section>` and `<footer>`. (There are many more.)
 
-        The `div` tag can still be used when needed for purely grouping elements together for styling or when no other HTML5 tag properly describes the element.
+        The `div` tag can still be used when simply grouping elements together for styling, or when no other HTML5 tag properly describes the grouped elements.
 
         ----
         ###Resources
@@ -616,12 +615,12 @@
       <script type="text/template">
         #Class Exercise #2: Page structure (5 minutes)
 
-        Back in the text editor, let's add the HTML5 structural tags to setup the page layout.
+        Back in the text editor, let's add the HTML5 structural tags to set up the page layout.
         Only add the structural HTML blocks in this step, no content just yet.
 
-        We will need these tags: `<header>`, one `<section>`'s and a `<footer>`
+        We will need these tags: one `<header>`, one `<section>` and a `<footer>`
 
-        Also, you can use HTML comments to help organize the code like so:
+        You can also use HTML comments to help organize the code like so:
 
         ```
         <!-- page header -->
@@ -657,7 +656,7 @@
       <script type="text/template">
         #Headings
 
-        There are six headings tags ranging from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
+        There are six heading tags ranging from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
 
         <div class="example essay-headings">
         <p><strong>Essay Title</strong></p>
@@ -687,7 +686,7 @@
       <script type="text/template">
         #Headings & HTML5 Sectioning tags
 
-        With the introduction of HTML5 sectioning tags, each part of the document that uses a sectioning tag now gets its *own* outline.
+        With the introduction of HTML5 sectioning tags, each section of the document now gets its *own* outline.
 
         **HTML5 Heading Outline**
         ```xml
@@ -735,7 +734,7 @@
       <script type="text/template">
         #Self-closing tags and images
 
-        Self-closing tags don't format content or require a closing tag. They are used to embed objects onto the page; they *are* the content.
+        Self-closing tags don't format content or require a closing tag. They are used to embed objects in the page; they *are* the content.
 
         Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
 
@@ -778,7 +777,7 @@
       <script type="text/template">
         #Image file paths
 
-        It's best practice (but not required) to put image files into its own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
+        It's best practice (but not required) to put image files into their own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
 
         Since the images are not in the same folder as **start.html**, use a *relative* path to link to the file.
 
@@ -798,7 +797,7 @@
         <img src="folder/sub-folder/filename">
         ```
 
-        If your file extensions do not show by default, here are instructions for [Mac](https://support.apple.com/kb/PH19072?locale=en_US) and for [Windows](http://windows.microsoft.com/en-ca/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7).
+        If your file extensions do not show by default, here are instructions for [Mac](https://support.apple.com/kb/PH19072?locale=en_US) and for [Windows](https://support.microsoft.com/en-ca/kb/865219).
       </script>
     </section>
 
@@ -863,7 +862,7 @@
       <script type="text/template">
         #CSS Syntax & Terminology
 
-        **Selectors:** determines which HTML element(s) to apply the styles to.
+        **Selectors:** determine which HTML element(s) to apply the styles to.
         **Declarations:** style rules written in `property:value` pairs, are wrapped by curly brackets `{ }` and must end with a semi-colon `;`
 
         ```
@@ -893,7 +892,7 @@
           font-size: 50px;
         }
         ```
-        There are many, many CSS properties. New ones are added as old ones being retired (deprecated).  It's good to have a few resources on hand.
+        There are many, many CSS properties. New ones are added as old ones are retired (deprecated).  It's good to have a few resources on hand.
 
         ---
         ###Resources
@@ -928,7 +927,7 @@ selector { /* select the heading */
 
         The style sheet is then referenced within the `<head>` of the HTML document (different tag from `<header>`).
 
-        Use `<link>` tag and two *attributes*, `rel` and `href`.
+        Use a `<link>` tag and two *attributes*, `rel` and `href`.
 
         ```
         <head>
@@ -941,7 +940,7 @@ selector { /* select the heading */
 
         ---
         ###Resource
-        There are several ways to add CSS. Read more about the difference ways to reference CSS <!-- .element: class="footnote" -->[here](http://reference.sitepoint.com/css/linkingcss).
+        There are several ways to add CSS. Read more about the different ways to reference CSS <!-- .element: class="footnote" -->[here](http://reference.sitepoint.com/css/linkingcss).
       </script>
     </section>
 
@@ -950,7 +949,7 @@ selector { /* select the heading */
         #Class Exercise: Create your project's CSS File
 
         1. In the text editor, create a new CSS file by selecting **File > New File**.
-        1. Name it **styles.css** and save it the root folder (same level as your **start.html** file).
+        1. Name it **styles.css** and save it in the root folder (same level as your **start.html** file).
         1. Then, reference it in **start.html** and the second html file you just created. <span class="note">**Pro tip!** Type `link` and press tab!</span>
           ```
           <head>
@@ -1033,7 +1032,7 @@ selector { /* select the heading */
       <script type="text/template">
         #CSS Font Styles
 
-        The are quite a few CSS properties for styling text.  Here's a few to discuss today. Change some values below to see what happens!
+        The are quite a few CSS properties for styling text.  Here are a few to discuss today. Change some values below to see what happens!
 
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
         font-family: Helvetica, Arial, serif;
@@ -1065,7 +1064,7 @@ selector { /* select the heading */
         font-family: Helvetica, Arial, serif;
         ```
 
-        * Some common "web safe" are:
+        * Some common "web safe" fonts are:
           * <span style="font-family:Arial;">Arial</span>
           * <span style="font-family:Verdana;">Verdana</span>
           * <span style="font-family:Times New Roman;">Times New Roman</span>
@@ -1082,11 +1081,18 @@ selector { /* select the heading */
 
         1. Go to [Google Fonts](http://www.google.com/fonts).
         1. **Add to Collection** to select a font.
-        ![](framework/img/workshop/google-fonts-1.jpg)
-        1. Select **Use** to get the code. <span class="note">(You can change your selections in the next exercise.)</span>
-        1. Select font weights. <span class="note">The more you choose, the more it will slow down page load time.</span>
+        ![](framework/img/workshop/add-google-font.png)
+        1. Open up the <em>Families Selected</em> drawer at the bottom of the page.
+![](framework/img/workshop/open-up-chosen-fonts.png)
+        <span class="note">(You can change your selections in the next exercise.)</span>
+        1. Select font weights in the "Customize" Tab.
+![](framework/img/workshop/choose-weights.png)
+        <p>The more you choose, the more it will slow down page load time.</p>
+![](framework/img/workshop/load-slow.png)
           * The default character set should contain what you need.
-        1. Copy the `<link>` code snippet and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
+        1. Copy the `<link>` code snippet
+![](framework/img/workshop/copy-google-font-script.png)
+         and add it the `<head>` of your page, before your **styles.css**, to reference the Google Font CSS.
           ```
           <head>
             <meta charset="UTF-8">
@@ -1095,12 +1101,16 @@ selector { /* select the heading */
             <link rel="stylesheet" href="styles.css">
           </head>
           ```
+          * Note that Google Fonts includes characters that must be encoded in a URL, using **percent encoding**. In the example above, the straight pipe character (|) is encoded to '%7C'.
 
         Now you're ready to use the new fonts. Use the font-family name listed in the Google Fonts page.
 
         ```
         font-family: 'Open Sans', sans-serif;
         ```
+
+        ###Resource
+        [Wikipedia article on percent encoding](https://en.wikipedia.org/wiki/Percent-encoding)
       </script>
     </section>
 
@@ -1108,7 +1118,7 @@ selector { /* select the heading */
       <script type="text/template">
         #Inheritance and Specificity
 
-        A strength of CSS is styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
+        A strength of CSS is that styles can be inherited from parent to child elements. Let's review the family tree structure between the elements.
 
         ```
         <body><!-- parent of h1 and p -->
@@ -1117,7 +1127,7 @@ selector { /* select the heading */
         </body>
         ```
 
-        CSS properties in the `body` selector is inherited by the descendant elements. A more specific selector will override the inherited values.
+        CSS properties in the `body` selector are inherited by the descendant elements. A more specific selector will override the inherited values.
         ```
         body {
           color: #222222;
@@ -1133,7 +1143,7 @@ selector { /* select the heading */
       <script type="text/template">
         #Class Exercise #5: Typography
 
-        (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts.)<!-- .element: class="note" -->
+          (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts. OR if you haven't chosen any Google Fonts, take a look at [http://css.cool](http://css.cool) and choose a font from the font-families section)<!-- .element: class="note" -->
 
         Let&#39;s add the base font to the `body` element, so all the descendant elements can inherit this style.
 
@@ -1234,7 +1244,7 @@ selector { /* select the heading */
       <script type="text/template">
         #Margin and Padding
 
-        Both margin and padding can also used the longhand property to target a specific side.
+        Both margin and padding can also use the longhand property to target a specific side.
 
         ```css
         margin-top: 2px;
@@ -1425,7 +1435,7 @@ margin: 0px;</textarea>
         <ul>
           <li class="delayed">What **other pages** do you need to create in your narrative?</li>
           <li class="delayed">What **hyperlinks** will you use to allow users to navigate your project?</li>
-          <li class="delayed">What is the over all **"look and feel"** of your project?</li>
+          <li class="delayed">What is the overall **"look and feel"** of your project?</li>
         </ul>
 
         <p class="delayed">Trying to do something in CSS but not sure how? <br><br>Be sure to check the [Mozilla Developer Network List of CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) for more info, or flag down one of our mentors!</p>
@@ -1492,7 +1502,11 @@ margin: 0px;</textarea>
             <h1>The Learn To Code Day <strong>Carnival!</strong></h1>
           </header>
 
+<<<<<<< HEAD
           <section>
+=======
+          <form action ="#" autocomplete="off">
+>>>>>>> ladieslearningcode/master
 
             <input type="radio" id="target1"/><label for="target1"></label>
             <input type="radio" id="target2"/><label for="target2"></label>
@@ -1500,15 +1514,15 @@ margin: 0px;</textarea>
             <input type="radio" id="target4"/><label for="target4"></label>
             <input type="radio" id="target5"/><label for="target5"></label>
 
-          </section>
+          </form>
 
           <footer>
           </footer>
         ```
 
-        <p>There are definitely some similarities here. We have a `header`, `section` and `footer`, but...</p>
+        <p>There are definitely some similarities here. We have a `header` and `footer`, but...</p>
         <ul>
-          <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label`</li>
+          <li class="delayed">The section contains HTML tags we haven't seen yet: `input` and `label` inside a `form`</li>
           <li class="delayed">The footer is empty (on purpose)</li>
         </ul>
 
@@ -1521,7 +1535,7 @@ margin: 0px;</textarea>
 
         You typically cannot do click interactions with just HTML and CSS - this is usually handled with JavaScript or jQuery (a JavaScript library). One way developers get around this is to "hack" existing HTML tags that are used in [online forms](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form).
 
-        The key thing to note for today's project is the `id` attribute on the `input` tag...
+        The key thing to note for today's project is that the `id` attribute on the `input` tag...
 
         ```
         <input type="radio" id="target1"/>
@@ -1715,12 +1729,12 @@ margin: 0px;</textarea>
       <script type="text/template">
         #CSS Animations
 
-        Great - so we've established our animation keyframes and named it `move`. How do we apply it to elements in our CSS?
+        Great - so we've established our animation's keyframes and named them `move`. How do we apply the animation to elements in our CSS?
 
-        Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `section`...
+        Enter: the CSS `animation` property. Let's take a look in our `styles.css` file again, where we style the `form`...
 
         ```
-        section {
+        form {
           animation-name: move;
           animation-duration: 30s;
           animation-delay: 1s;
@@ -1731,10 +1745,10 @@ margin: 0px;</textarea>
 
         There are a couple things going on here:
         <ul>
-          <li class="delayed">We've assigned our keyframe `move` to the section using `animation-name`</li>
+          <li class="delayed">We've assigned our keyframe `move` to the form using `animation-name`</li>
           <li class="delayed">We set the duration of our animation to 30 seconds (try changing this value)</li>
           <li class="delayed">We want the animation to start after the page has loaded and waited for 1 second</li>
-          <li class="delayed">We want the direction of our animation to move forwards</li>
+          <li class="delayed">We want the direction of our animation to move forward</li>
           <li class="delayed">And we want the overall speed of our animation to be the same throughout (linear)</li>
         </ul>
 
@@ -1803,6 +1817,16 @@ margin: 0px;</textarea>
           * https://www.codeschool.com/courses/front-end-foundations
         1. http://www.htmlandcssbook.com
         1. Try a few more Ladies Learning Code workshops. Check our roadmap for suggestions at [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
+        1. There is a big world of interactive fiction/visual novel tools out there. Here are a few popular ones:
+        	* [Twine](http://twinery.org/) (uses HTML/CSS too)
+        	* [Inform7](http://inform7.com/)
+        	* [TyrannoBuilder](http://tyranobuilder.com/)
+        	* [Ren'py](http://renpy.org) (uses Python)
+        	* [Yarn + Unity3D](https://github.com/InfiniteAmmoInc/Yarn)
+        	* [Inklewriter](http://www.inklestudios.com/inklewriter/)
+        	* See a [comprehensive list here](https://docs.google.com/spreadsheets/d/1-B1yKIateTpwTdRNT9W_ZjDzC6XnFpHXrcZ4nr_x7LQ/edit#gid=0)
+        	* Checkout this [great tutorial on Twine]( http://pixelles.ca/blog/2015/01/workshop-twine) by LLC's very own Montreal Chapter Lead Instructor Rebecca Cohen Palacios
+
       </script>
     </section>
 
@@ -1819,7 +1843,7 @@ margin: 0px;</textarea>
         <li><a href="http://twitter.com/rcass">@rcass</a></li>
       </ul>
 
-      <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+      <p class="attribution">Slide presentation adapted by <a href="http://natcooper.com">Nat Cooper</a> & originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Special thanks to all contributors to the slides: <a href="https://github.com/mattb0m)">mattb0m</a>, <a href="https://github.com/zoster">zoster</a>, <a href="https://github.com/hrtovey">hrtovey</a>, <a href="https://github.com/jessynd">jessynd</a>, <a href="https://github.com/melissacrnic">melissacrnic</a> and <a href="http://pixelles.ca/blog/2015/01/workshop-twine">Rebecca Cohen Palacios</a></p>
     </section>
 
   </main><!-- cls main section -->
